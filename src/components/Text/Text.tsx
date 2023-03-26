@@ -19,5 +19,5 @@ export default function Text(props: TextProps){
 }
 
 Text.defaultProps = {
-    tag: 'p'
+    tag: 'span'
 }

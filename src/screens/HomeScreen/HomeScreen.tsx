@@ -2,6 +2,7 @@ import Box from "@src/components/Box/Box";
 import Text from '@src/components/Text/Text'
 import Background from "./patterns/Background/Background";
 import Feed from "./patterns/Feed/Feed";
+import Footer from "./patterns/Footer/Footer";
 import Menu from "./patterns/Menu/Menu";
 
 export default function HomeScreen(){
@@ -9,6 +10,13 @@ export default function HomeScreen(){
         <>
             <Box
               tag="main"
+              
+              styleSheet={{
+                backgroundColor: 'red',
+                border: '10px solid black',
+                flex: 1
+              }}
+              
             >
                 <Background></Background>
                 <Menu></Menu>
@@ -19,6 +27,7 @@ export default function HomeScreen(){
                     </Text>
                     <Feed.Posts/>
                 </Feed>
+                <Footer></Footer>
             </Box>
         </>
     )
