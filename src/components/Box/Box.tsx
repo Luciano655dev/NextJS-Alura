@@ -3,9 +3,9 @@ import StyleSheet from '@src/theme/StyleSheet'
 import React from 'react'
 
 interface BoxProps {
-    tag: any, // A resolver
-    children: React.ReactNode,
-    styleSheet: StyleSheet,
+    tag?: any, // A resolver
+    children?: React.ReactNode,
+    styleSheet?: StyleSheet,
 }
 
 export default function Box({ children, styleSheet, tag, ...props }: BoxProps){
